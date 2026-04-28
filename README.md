@@ -40,16 +40,16 @@ and AI-powered applications.
 
 | Project | Description | Stack |
 |---|---|---|
-| [AutoMata](link) | Workflow automation engine, 6-platform OAuth | Next.js, PostgreSQL, Prisma |
-| [DSHIELD](link) | Crowd safety & stampede detection system | Python, MQTT, InfluxDB, AWS |
-| [Social](link) | Graph-based alumni networking platform | Next.js, MongoDB, WebSockets |
+| [AutoMata](https://auto-mata.vercel.app) | Workflow automation engine, 6-platform OAuth | Next.js, PostgreSQL, Prisma |
+| DSHIELD | Crowd safety & stampede detection system (Desktop Application) | Python, MQTT, InfluxDB, AWS |
+| [Social](https://mod-nect.vercel.app) | Graph-based alumni networking platform | Next.js, MongoDB, WebSockets |
 
 ---
 
 ## 📬 Let's Connect
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Aaryan_Bairagi-blue?style=flat&logo=linkedin)](https://linkedin.com/in/aaryanbairagi)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Aaryan_Bairagi-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/aaryan-bairagi-183249249/)
 [![Email](https://img.shields.io/badge/Email-aaryanbairagi1108@gmail.com-red?style=flat&logo=gmail)](mailto:aaryanbairagi1108@gmail.com)
 
 💼 **Open to:** Full Stack, Backend & ML Engineering roles — 
-Internships & Full-time (Available May/June 2026)
+Internships & Full-time 
