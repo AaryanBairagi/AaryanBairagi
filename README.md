@@ -6,7 +6,7 @@ and AI-powered applications.
 
 ---
 
-## 🔨 What I Build
+## 🔨 What I have Built
 
 - **Workflow Automation** — Built AutoMata, a Zapier-style engine 
   connecting 6 platforms (Google Drive, Gmail, Slack, Discord, 
@@ -42,7 +42,7 @@ and AI-powered applications.
 |---|---|---|
 | [AutoMata](https://auto-mata.vercel.app) | Workflow automation engine, 6-platform OAuth | Next.js, PostgreSQL, Prisma |
 | DSHIELD | Crowd safety & stampede detection system (Desktop Application) | Python, MQTT, InfluxDB, AWS |
-| [Social](https://mod-nect.vercel.app) | Graph-based alumni networking platform | Next.js, MongoDB, WebSockets |
+| [Social](https://social-omega-sage.vercel.app) | Graph-based alumni networking platform | Next.js, MongoDB, WebSockets |
 
 ---
 
