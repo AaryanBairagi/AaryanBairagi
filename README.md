@@ -1,12 +1,12 @@
 # Hi, I'm Aaryan Bairagi 👋
 
-Full Stack Engineer & AI Systems Builder based in Pune, India.
+Full Stack Developer & AI Systems Builder based in Pune, India.
 I build production-grade web systems, real-time infrastructure,
 and AI-powered applications.
 
 ---
 
-## 🔨 What I have Built
+## 🔨 What I have Built :
 
 - **Workflow Automation** — Built AutoMata, a Zapier-style engine 
   connecting 6 platforms (Google Drive, Gmail, Slack, Discord, 
