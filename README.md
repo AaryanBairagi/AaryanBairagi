@@ -219,17 +219,14 @@ Designed and shipped a multi-stage AI video pipeline (QuickVid AI) transforming 
 
 ---
 
-## Achievements
+## Academic Performances
 
 <div align="center">
 
 | Recognition | Details |
 |:---:|:---|
-| GFG College Rank | Ranked 14th in college on GeeksforGeeks · Coding Score 1200+ |
 | DSA Consistency | 450+ problems solved across LeetCode and GeeksforGeeks |
-| LeetCode Activity | 320+ problems solved · 95/946 Easy · 181/2061 Medium · 44/937 Hard |
-| LeetCode Streak | Max streak 34 days · 224 total active days · 50 Days Badge 2026 |
-| Academic Performance | B.E. IT with Honours in Data Science · CGPA 8.8/10 |
+| BE Performance | B.E. IT with Honours in Data Science · CGPA 8.8/10 |
 | HSC Performance | 86% · Ranked 4th in college for outstanding academic performance |
 | ICSE Performance | 95.6% · Ranked 9th in school for outstanding academic performance |
 | Research | DSHIELD research paper in progress — final year project |
@@ -305,14 +302,20 @@ Designed and shipped a multi-stage AI video pipeline (QuickVid AI) transforming 
 
 ---
 
-## GitHub Trophies
+
+## Core Competencies
 
 <div align="center">
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=AaryanBairagi&theme=discord&no-frame=true&no-bg=true&margin-w=6&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+| Area | Focus |
+|---|---|
+| Backend | APIs, auth, databases, scaling |
+| Frontend | Next.js, React, responsive UI |
+| AI/ML | pipelines, integration, deployment |
+| Systems | event-driven architecture, reliability |
+| Security | encryption, access control, tamper detection |
 
 </div>
-
 ---
 
 ## Contribution Activity
