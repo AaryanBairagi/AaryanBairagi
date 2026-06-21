@@ -366,7 +366,7 @@ current_focus:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Aaryan%20Bairagi-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aaryan-bairagi-183249249/)
 [![GitHub](https://img.shields.io/badge/GitHub-AaryanBairagi-171515?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AaryanBairagi)
 [![Twitter](https://img.shields.io/badge/Twitter-@aaryanb4real-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/aaryanb4real)
-https://www.instagram.com/aaryanb4real/
+[![Instagram](https://img.shields.io/badge/Instagram-@aaryanb4real-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/aaryanb4real/)
 
 </div>
 
