@@ -6,20 +6,7 @@
 
 <br/>
 
-![B.E. Information Technology](https://img.shields.io/badge/B.E.%20Information%20Technology-Honours%20in%20Data%20Science-7c3aed?style=for-the-badge&logo=graduation-cap&logoColor=white)
-![CGPA](https://img.shields.io/badge/CGPA-8.8%20%2F%2010-6d28d9?style=for-the-badge&logo=star&logoColor=white)
-![PES Modern College](https://img.shields.io/badge/PES%20Modern%20College%20of%20Engineering-Pune-4c1d95?style=for-the-badge&logo=university&logoColor=white)
-
-<br/>
-
 ![Location](https://img.shields.io/badge/Pune%2C%20Maharashtra%2C%20India-0f172a?style=flat-square&logo=googlemaps&logoColor=a78bfa)
-
-<br/>
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://github.com/AaryanBairagi)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aaryan-bairagi-183249249/)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aaryanbairagi1108@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-171515?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AaryanBairagi)
 
 <br/>
 
@@ -225,11 +212,9 @@ Designed and shipped a multi-stage AI video pipeline (QuickVid AI) transforming 
 
 | Recognition | Details |
 |:---:|:---|
-| DSA Consistency | 450+ problems solved across LeetCode and GeeksforGeeks |
-| BE Performance | B.E. IT with Honours in Data Science · CGPA 8.8/10 |
+| BE [SPPU] Performance | B.E. IT with Honours in Data Science · CGPA 8.8/10 |
 | HSC Performance | 86% · Ranked 4th in college for outstanding academic performance |
 | ICSE Performance | 95.6% · Ranked 9th in school for outstanding academic performance |
-| Research | DSHIELD research paper in progress — final year project |
 
 </div>
 
@@ -381,6 +366,7 @@ current_focus:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Aaryan%20Bairagi-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aaryan-bairagi-183249249/)
 [![GitHub](https://img.shields.io/badge/GitHub-AaryanBairagi-171515?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AaryanBairagi)
 [![Twitter](https://img.shields.io/badge/Twitter-@aaryanb4real-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/aaryanb4real)
+https://www.instagram.com/aaryanb4real/
 
 </div>
 
@@ -392,4 +378,4 @@ current_focus:
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=120&section=footer&animation=fadeIn" width="100%"/>
 
-</div>
+</div> 
