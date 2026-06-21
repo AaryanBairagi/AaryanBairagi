@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=200&section=header&text=Aaryan%20Bairagi&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Software%20Engineer%20%7C%20Full-Stack%20%7C%20Backend%20%7C%20AI%2FML%20Systems&descAlignY=58&descColor=a78bfa" width="100%"/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=7C3AED&center=true&vCenter=true&width=800&lines=Building+Systems+That+Work+in+Production;Full-Stack+%7C+Backend+%7C+AI%2FML+%7C+IoT+Engineering;Event-Driven+Architecture+%7C+Scalable+APIs;Digital+Twins+%7C+Blockchain+%7C+Real-Time+Systems;Not+Just+on+Localhost.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=c2a3fd&center=true&vCenter=true&width=800&lines=Building+Systems+that+work+in+Production.;Full-Stack+Development+%7C+Backend-Infrastructure+%7C+AI%2FML;Event-Driven+Architecture+%7C+Scalable+APIs;Not+just+on+Localhost.)](https://git.io/typing-svg)
 
 <br/>
 
