@@ -272,12 +272,12 @@ Designed and shipped a multi-stage AI video pipeline (QuickVid AI) transforming 
 
 ## GitHub Analytics
 
-<div align="center">
+<!-- <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=AaryanBairagi&show_icons=true&theme=midnight-purple&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d0d1a&title_color=7c3aed&icon_color=a78bfa&text_color=e2e8f0"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=AaryanBairagi&show_icons=true&theme=midnight-purple&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d0d1a&title_color=7c3aed&icon_color=a78bfa&text_color=e2e8f0"/> 
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AaryanBairagi&layout=compact&langs_count=8&theme=midnight-purple&hide_border=true&bg_color=0d0d1a&title_color=7c3aed&text_color=e2e8f0"/>
 
-</div>
+</div> -->
 
 <div align="center">
 
