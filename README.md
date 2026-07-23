@@ -216,7 +216,7 @@ Designed and shipped a multi-stage AI video pipeline (QuickVid AI) transforming 
 
 </div>
 
----
+<!-- ---
 
 ## Certifications
 
@@ -252,7 +252,7 @@ Designed and shipped a multi-stage AI video pipeline (QuickVid AI) transforming 
 
 ![Meta](https://img.shields.io/badge/Meta%20Back--End%20Developer-Professional%20Certificate-0866FF?style=for-the-badge&logo=meta&logoColor=white)
 
-</div>
+ </div> -->
 
 ---
 
