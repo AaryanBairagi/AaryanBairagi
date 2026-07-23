@@ -93,7 +93,6 @@ A hybrid AI + IoT crowd monitoring system for real-time stampede risk detection 
 | **Storage** | InfluxDB for time-series crowd analytics · Amazon RDS for structured user data |
 | **Impact** | Real-world stampede detection with automated evacuation coordination |
 | **Status** | Final Year Project · Research Paper in Progress |
-| **Repository** | [github.com/AaryanBairagi/dshield](https://github.com/AaryanBairagi) |
 
 </div>
 
@@ -121,7 +120,6 @@ A full-stack SaaS platform for building trigger-based workflow automations acros
 | **Security** | Custom OAuth 2.0 integrations · token refresh · scope validation · revocation |
 | **Billing** | Stripe subscription + usage-based credit billing |
 | **Impact** | No third-party middleware — built the entire execution layer from scratch |
-| **Repository** | [github.com/AaryanBairagi/AutoMata](https://github.com/AaryanBairagi/AutoMata) |
 
 </div>
 
@@ -142,7 +140,7 @@ A production-grade full-stack social networking platform with graph-based relati
 
 | Attribute | Details |
 |:---|:---|
-| **Stack** | Next.js · MongoDB · TypeScript · WebSockets · Redis · Clerk · Cloudinary · Tailwind CSS |
+| **Stack** | Next.js · MongoDB · TypeScript · WebSockets · Redis · JWT · Cloudinary · Tailwind CSS |
 | **Architecture** | Directed-edge graph data model for O(1) follower lookups and scalable traversal |
 | **Scale** | Graph traversal supporting first and second-degree connection analysis |
 | **Performance** | Redis-compatible caching + route-level rate limiting under high load |
