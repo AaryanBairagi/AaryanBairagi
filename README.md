@@ -1,220 +1,391 @@
+<a id="readme-top"></a>
+
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=200&section=header&text=Aaryan%20Bairagi&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Software%20Engineer%20%7C%20Full-Stack%20%7C%20Backend%20%7C%20AI%2FML%20Systems&descAlignY=58&descColor=a78bfa" width="100%"/>
+<a href="https://aaryanbairagi.in"><img src="assets/hero.svg" width="100%" alt="Aaryan Bairagi. I build systems that work in production, not just on localhost. Software engineer in Pune, India, working across backend, full-stack and AI/ML systems."></a>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=c2a3fd&center=true&vCenter=true&width=800&lines=Building+Systems+that+work+in+Production.;Full-Stack+Development+%7C+Backend-Infrastructure+%7C+AI%2FML;Event-Driven+Architecture+%7C+Scalable+APIs;Not+just+on+Localhost.)](https://git.io/typing-svg)
+<a href="https://aaryanbairagi.in"><img src="assets/buttons/portfolio.svg" height="44" alt="Portfolio"></a>&nbsp;
+<a href="https://aaryanbairagi.in/resume/aaryan-bairagi-resume.pdf"><img src="assets/buttons/resume.svg" height="44" alt="Resume (PDF)"></a>&nbsp;
+<a href="https://www.linkedin.com/in/aaryan-bairagi-183249249/"><img src="assets/buttons/linkedin.svg" height="44" alt="LinkedIn"></a>&nbsp;
+<a href="mailto:aaryanbairagi1108@gmail.com"><img src="assets/buttons/email.svg" height="44" alt="Email"></a>
 
 <br/>
 
-![Location](https://img.shields.io/badge/Pune%2C%20Maharashtra%2C%20India-0f172a?style=flat-square&logo=googlemaps&logoColor=a78bfa)
-
-<br/>
-
-![Profile Views](https://komarev.com/ghpvc/?username=AaryanBairagi&color=7c3aed&style=flat-square&label=Profile+Views)
-![GitHub Followers](https://img.shields.io/github/followers/AaryanBairagi?style=flat-square&color=6d28d9&label=Followers)
-![GitHub Stars](https://img.shields.io/github/stars/AaryanBairagi?style=flat-square&color=4c1d95&label=Stars)
+<a href="#about"><kbd>&nbsp;About&nbsp;</kbd></a>&nbsp;
+<a href="#open-source"><kbd>&nbsp;Open source&nbsp;</kbd></a>&nbsp;
+<a href="#featured-projects"><kbd>&nbsp;Projects&nbsp;</kbd></a>&nbsp;
+<a href="#experience"><kbd>&nbsp;Experience&nbsp;</kbd></a>&nbsp;
+<a href="#tech-stack"><kbd>&nbsp;Stack&nbsp;</kbd></a>&nbsp;
+<a href="#github-activity"><kbd>&nbsp;Activity&nbsp;</kbd></a>&nbsp;
+<a href="#connect"><kbd>&nbsp;Contact&nbsp;</kbd></a>
 
 </div>
-
----
 
 ## About
 
-I build systems — full-stack applications, backend infrastructure, and ML-integrated products that work in production, not just on localhost. Taking an idea from scratch and turning it into something people can actually use is what drives most of what I do.
+I build systems: full-stack applications, backend infrastructure and ML-integrated products that work in production, not just on localhost. Taking an idea from scratch to something people can actually use is what drives most of what I do.
 
-My work spans three areas: backend and full-stack engineering using Node.js, Next.js, TypeScript, PostgreSQL, and MongoDB; applied ML/AI including TensorFlow, Keras, neural networks, async AI pipelines, and LLM integration; and IoT/edge systems using Computer Vision, MQTT, Raspberry Pi, and real-time data ingestion. Most of what I build sits at the intersection of at least two of these.
+Most of my work sits where at least two of these meet:
 
-I approach engineering with an architectural mindset — designing for scalability, failure tolerance, and maintainability from the start, not as an afterthought. I take distributed systems, event-driven architecture, and system design seriously, and that thinking shows up in how I structure projects, not just on paper.
+- **Backend and full-stack:** Node.js, Next.js, TypeScript, PostgreSQL, MongoDB, Redis, WebSockets
+- **Applied AI/ML:** LLM integration, async AI pipelines, TensorFlow, Keras, computer vision
+- **IoT and edge:** MQTT, Raspberry Pi, real-time ingestion, time-series analytics
 
-**Open To:** Backend Engineering · Full-Stack Engineering · ML/AI Engineering · SWE Internships · Full-Time Roles
+I design for scalability, failure tolerance and maintainability from the start, not as an afterthought. That's also why my newest project is a library about failure: [llmfuse](#open-source).
 
----
+**Open to:** backend, full-stack and ML/AI engineering roles, as an intern or full-time.
 
-## Tech Stack
+## Open source
 
-<div align="center">
+<a href="https://pypi.org/project/llmfuse/"><img src="assets/llmfuse.svg" width="100%" alt="llmfuse: production-grade reliability for LLM calls. An animated diagram shows one request while Groq is down: Groq answers 503 and is retried with backoff, then llmfuse fails over to Gemini, which answers 200 OK."></a>
 
-**Languages**
+[![PyPI](https://img.shields.io/pypi/v/llmfuse?style=flat-square&color=7c3aed&label=PyPI)](https://pypi.org/project/llmfuse/)
+[![Python versions](https://img.shields.io/pypi/pyversions/llmfuse?style=flat-square&color=6d28d9)](https://pypi.org/project/llmfuse/)
+[![CI](https://github.com/AaryanBairagi/llmfuse/actions/workflows/ci.yml/badge.svg)](https://github.com/AaryanBairagi/llmfuse/actions/workflows/ci.yml)
+[![Runtime dependencies: 0](https://img.shields.io/badge/runtime%20dependencies-0-4c1d95?style=flat-square)](https://github.com/AaryanBairagi/llmfuse#design-principles)
+[![License](https://img.shields.io/pypi/l/llmfuse?style=flat-square&color=4c1d95)](https://github.com/AaryanBairagi/llmfuse/blob/main/LICENSE)
 
-[![My Skills](https://skillicons.dev/icons?i=ts,js,python,java,c&theme=dark)](https://skillicons.dev)
+**[llmfuse](https://github.com/AaryanBairagi/llmfuse)** is my open-source Python library for calling LLM APIs reliably. You list your providers in priority order. When one is slow, rate-limited or down, llmfuse retries it with backoff, stops calling it once it's clearly broken, and answers from the next one. Your application just gets a response.
 
-**Frontend**
+```bash
+pip install llmfuse
+```
 
-[![My Skills](https://skillicons.dev/icons?i=nextjs,react,tailwind,html,css&theme=dark)](https://skillicons.dev)
+```python
+from llmfuse import FuseClient
+from llmfuse.providers import AnthropicProvider, GeminiProvider, GroqProvider
 
-**Backend & Databases**
+client = FuseClient(providers=[
+    GroqProvider(model="..."),       # tried first
+    GeminiProvider(model="..."),     # fallback
+    AnthropicProvider(model="..."),  # last resort
+])
 
-[![My Skills](https://skillicons.dev/icons?i=nodejs,express,postgresql,mongodb,redis,prisma,mysql&theme=dark)](https://skillicons.dev)
+response = client.complete("Explain retrieval-augmented generation in one sentence.")
+print(response.provider, response.text)  # "gemini ..." while Groq is down
+```
 
-**Cloud, DevOps & Tooling**
-
-[![My Skills](https://skillicons.dev/icons?i=aws,gcp,docker,vercel,git,github,vscode&theme=dark)](https://skillicons.dev)
-
-</div>
-
----
-
-## AI / ML Expertise
-
-<div align="center">
-
-| Domain | Proficiency | Details |
-|:---|:---:|:---|
-| Deep Learning | Advanced | Neural Networks, CNNs, ANNs, Transformer Models |
-| ML Frameworks | Advanced | TensorFlow, Keras, Scikit-learn |
-| AI Pipelines | Advanced | Async multi-stage orchestration, fault-tolerant execution |
-| LLM Integration | Intermediate | API integration, prompt engineering, context management |
-| Computer Vision | Intermediate | Real-time inference, edge deployment on Raspberry Pi |
-| Predictive Modeling | Intermediate | Feature engineering, model training, evaluation |
-| Data Engineering | Intermediate | Pandas, Matplotlib, InfluxDB, time-series analytics |
-| IoT / Edge AI | Intermediate | MQTT, Mosquitto broker, sensor data ingestion |
-
-</div>
-
----
-
-## Featured Projects
+| When this happens | llmfuse |
+|:---|:---|
+| Rate limits (HTTP 429) | Paces requests with a per-provider token bucket and honours `Retry-After` |
+| Overloaded servers and timeouts | Retries with exponential backoff and full jitter |
+| A provider keeps failing | Opens that provider's circuit breaker and skips it until a cool-down passes |
+| Bad API keys or unknown models | Fails over at once, with no wasted retries |
+| A bug in your own code | Never retried or hidden; it surfaces straight away |
 
 <details>
-<summary><b>DSHIELD — Digital Twin-based Stampede Hazard Identification, Estimation & Live Detection</b></summary>
-
+<summary><b>See one request during an outage</b></summary>
 <br/>
 
-A hybrid AI + IoT crowd monitoring system for real-time stampede risk detection and emergency response coordination. DSHIELD combines ML inference models with physics-based crowd behavior analysis in a single hybrid backend, deployed on edge hardware and connected to cloud infrastructure for real-time alerting.
-
-<div align="center">
-
-| Attribute | Details |
-|:---|:---|
-| **Stack** | Python · Node.js · MQTT (Mosquitto) · Raspberry Pi · InfluxDB · Amazon RDS · JavaScript |
-| **Architecture** | Digital twin with hybrid edge-cloud data pipeline |
-| **Performance** | Low-latency MQTT edge ingestion via publisher-subscriber model |
-| **Security** | Human-in-the-loop validation layer before alert escalation |
-| **Storage** | InfluxDB for time-series crowd analytics · Amazon RDS for structured user data |
-| **Impact** | Real-world stampede detection with automated evacuation coordination |
-| **Status** | Final Year Project · Research Paper in Progress |
-
-</div>
-
-Built a closed-loop alert system that triggers automatic notifications to event organizers and dispatches mobile-connected volunteers for coordinated crowd evacuation upon risk threshold breach. The system implements a human-in-the-loop decision layer that inserts manual validation checkpoints before alert escalation, ensuring operational feasibility and reducing false-positive evacuations in real-world deployments.
+```mermaid
+sequenceDiagram
+    autonumber
+    participant App as Your app
+    participant FC as llmfuse
+    participant G as Groq
+    participant M as Gemini
+    App->>FC: complete("Explain RAG")
+    FC->>G: attempt 1
+    G-->>FC: 503 Service Unavailable
+    Note over FC: retryable, so wait (backoff + jitter)
+    FC->>G: attempt 2
+    G-->>FC: 503
+    FC->>G: attempt 3
+    G-->>FC: 503
+    Note over FC: retries exhausted, record a failure on Groq's breaker
+    FC->>M: attempt 1
+    M-->>FC: 200 OK
+    FC-->>App: Response(text, provider="gemini")
+```
 
 </details>
 
----
-
 <details>
-<summary><b>AutoMata — AI Workflow Automation SaaS Platform</b></summary>
-
+<summary><b>How it's built</b></summary>
 <br/>
 
-A full-stack SaaS platform for building trigger-based workflow automations across 7 external platforms — Google Drive, Gmail, Gemini, Slack, Discord, Notion, and Google Calendar — without relying on Zapier or similar no-code middleware. Built with an event-driven runtime, asynchronous execution, and Stripe billing.
+- **Zero runtime dependencies.** HTTP goes through Python's standard library, so installing llmfuse adds nothing else.
+- **Fully typed.** Ships `py.typed` and is checked with mypy.
+- **Testable offline.** Clock, sleep and transport are injectable, and `llmfuse.testing` ships the same fakes the test suite uses, so you can simulate outages without API keys.
+- **CI on Python 3.10 to 3.13** with ruff, mypy and pytest.
+- **Released through PyPI Trusted Publishing** with signed build attestations.
+- **Verified live** against Groq, Gemini, OpenAI and Anthropic.
 
-<div align="center">
+</details>
 
-| Attribute | Details |
+**Next:** llmfuse v2, with an async client and routing to idle providers. After that comes **semcache**, a semantic cache for LLM calls that plugs into llmfuse.
+
+llmfuse started from a conversation with Ms. Amruta Nadgonde and was built under the mentorship of Mr. Atul Kahate.
+
+[PyPI](https://pypi.org/project/llmfuse/) &nbsp;|&nbsp; [Source](https://github.com/AaryanBairagi/llmfuse) &nbsp;|&nbsp; [Documentation](https://github.com/AaryanBairagi/llmfuse#readme)
+
+## Featured projects
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://automata-gk7u.onrender.com"><img src="assets/projects/automata.jpg" width="100%" alt="AutoMata landing page"></a>
+
+### AutoMata
+
+*Workflow automation SaaS. Live on Render.*
+
+Trigger-based automations across Google Drive, Gmail, Slack, Discord, Notion and Google Calendar, on an event-driven runtime written from scratch instead of Zapier, Make or n8n.
+
+`Next.js` `PostgreSQL` `Prisma` <code>OAuth&nbsp;2.0</code> <code>React&nbsp;Flow</code> `Stripe`
+
+[Open app](https://automata-gk7u.onrender.com) &nbsp;|&nbsp; [Demo video](https://www.youtube.com/watch?v=ls9q5mTQj4o) &nbsp;|&nbsp; [Case study](https://aaryanbairagi.in/explore/automata)
+
+</td>
+<td width="50%" valign="top">
+
+<a href="https://social-omega-sage.vercel.app"><img src="assets/projects/social.jpg" width="100%" alt="Social landing page"></a>
+
+### Social
+
+*Students and alumni network. Live on Vercel.*
+
+A directed-graph social network with AES-256-GCM encrypted chat, real-time messaging over WebSockets and second-degree connection recommendations.
+
+`Next.js` `MongoDB` `TypeScript` `WebSockets` `Redis` `JWT`
+
+[Open app](https://social-omega-sage.vercel.app) &nbsp;|&nbsp; [Source](https://github.com/AaryanBairagi/social) &nbsp;|&nbsp; [Case study](https://aaryanbairagi.in/explore/social)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://cloud-twin.vercel.app"><img src="assets/projects/cloudtwin.jpg" width="100%" alt="CloudTwin landing page"></a>
+
+### CloudTwin
+
+*Digital twin for Docker infrastructure. Live on Vercel.*
+
+Mirrors every container as a live digital twin with a health score and failure-risk prediction, and proposes self-healing restarts that run only after a person approves them.
+
+`Go` `Express` `Next.js` `PostgreSQL` `Redis` <code>Docker&nbsp;Engine&nbsp;API</code>
+
+[Open app](https://cloud-twin.vercel.app) &nbsp;|&nbsp; [Demo video](https://youtu.be/0nN6tu18A8U) &nbsp;|&nbsp; [Case study](https://aaryanbairagi.in/explore/cloudtwin)
+
+</td>
+<td width="50%" valign="top">
+
+<a href="https://www.youtube.com/watch?v=MFVBod1bXlw"><img src="assets/projects/d-shield.jpg" width="100%" alt="D-SHIELD crowd monitoring dashboard"></a>
+
+### D-SHIELD
+
+*Final-year research project. Paper in progress.*
+
+Real-time stampede risk detection that pairs ML inference with physics-based crowd models, running on Raspberry Pi edge nodes connected to the cloud.
+
+`Python` `Node.js` `MQTT` <code>Raspberry&nbsp;Pi</code> `InfluxDB` <code>Amazon&nbsp;RDS</code>
+
+[Demo video](https://www.youtube.com/watch?v=MFVBod1bXlw) &nbsp;|&nbsp; [Case study](https://aaryanbairagi.in/explore/d-shield)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://cerebrum-delta.vercel.app"><img src="assets/projects/cerebrum.jpg" width="100%" alt="Cerebrum landing page"></a>
+
+### Cerebrum
+
+*Exam integrity platform. In development, with a preview on Vercel.*
+
+Seals exam papers with RSA signatures and AES-256 encryption and records them on a blockchain, so any tampering can be traced to where it happened and who did it.
+
+`Solidity` `Blockchain` `RSA` `AES-256` `Node.js` `TypeScript`
+
+[Preview](https://cerebrum-delta.vercel.app) &nbsp;|&nbsp; [Source](https://github.com/AaryanBairagi/Cerebrum) &nbsp;|&nbsp; [Case study](https://aaryanbairagi.in/explore/cerebrum)
+
+</td>
+<td width="50%" valign="top">
+
+<a href="https://quick-vid-phi.vercel.app/"><img src="assets/projects/quickvid.jpg" width="100%" alt="QuickVid AI landing page"></a>
+
+### QuickVid AI
+
+*Internship project at IBN Technologies. The site is live; video generation is paused because of infrastructure costs.*
+
+Turns a prompt into a finished short-form video: script, scene assets, captions and voice-over, composed with Remotion.
+
+`Next.js` `TypeScript` `Remotion` `AssemblyAI` <code>Google&nbsp;Cloud&nbsp;TTS</code> `Stripe`
+
+[Open app](https://quick-vid-phi.vercel.app/) &nbsp;|&nbsp; [Source](https://github.com/AaryanBairagi/QuickVid) &nbsp;|&nbsp; [Case study](https://aaryanbairagi.in/explore/quickvid)
+
+</td>
+</tr>
+</table>
+
+### Engineering deep dives
+
+<details>
+<summary><b>AutoMata:</b> event-driven runtime, native OAuth and credit billing</summary>
+<br/>
+
+| Aspect | Detail |
 |:---|:---|
-| **Stack** | Next.js · PostgreSQL · Prisma ORM · TypeScript · OAuth 2.0 · React Flow · Clerk · Stripe |
+| **Stack** | Next.js, PostgreSQL, Prisma ORM, TypeScript, OAuth 2.0, React Flow, Clerk, Stripe |
 | **Architecture** | Event-driven workflow runtime with dependency-aware node orchestration |
-| **Scale** | 7 third-party platform integrations with native OAuth 2.0 |
-| **Performance** | Asynchronous task execution with webhook triggers |
-| **Security** | Custom OAuth 2.0 integrations · token refresh · scope validation · revocation |
-| **Billing** | Stripe subscription + usage-based credit billing |
-| **Impact** | No third-party middleware — built the entire execution layer from scratch |
+| **Integrations** | Google Drive, Gmail, Slack, Discord, Notion and Google Calendar, each through native OAuth 2.0 |
+| **Execution** | Asynchronous tasks with webhook triggers |
+| **Security** | Custom token lifecycle for every integration: refresh, scope validation and revocation |
+| **Billing** | Stripe subscriptions plus usage-based credits; workflows pause automatically when credits run out |
 
-</div>
-
-Designed event-driven workflow runtime with asynchronous task execution, webhook triggers, and dependency-aware node orchestration. Implemented custom OAuth 2.0 integrations and secure token lifecycle management for all 7 third-party services — handling token refresh, scope validation, and revocation natively. Integrated Stripe subscription and usage-based credit billing, allowing teams to cap workflow execution spend and automatically pause execution when credit thresholds are hit.
+A drag-and-drop builder in React Flow turns automations into graphs of modular execution nodes. None of it sits on third-party middleware: the entire execution layer is built from scratch.
 
 </details>
-
----
 
 <details>
-<summary><b>Social — Directed Graph-based Students & Alumni Networking Platform</b></summary>
-
+<summary><b>Social:</b> graph data model, encrypted chat and recommendations</summary>
 <br/>
 
-A production-grade full-stack social networking platform with graph-based relationship modeling, end-to-end encrypted messaging, and a second-degree recommendation engine. Built for students and alumni to connect, share content, and collaborate through a modern social ecosystem.
-
-<div align="center">
-
-| Attribute | Details |
+| Aspect | Detail |
 |:---|:---|
-| **Stack** | Next.js · MongoDB · TypeScript · WebSockets · Redis · JWT · Cloudinary · Tailwind CSS |
-| **Architecture** | Directed-edge graph data model for O(1) follower lookups and scalable traversal |
-| **Scale** | Graph traversal supporting first and second-degree connection analysis |
-| **Performance** | Redis-compatible caching + route-level rate limiting under high load |
-| **Security** | AES-256-GCM encryption before database persistence — unreadable at rest |
-| **Real-Time** | WebSocket messaging, likes, comments, and live notification delivery |
-| **Impact** | Second-degree recommendation engine with explainable reasoning |
-| **Repository** | [github.com/AaryanBairagi/social](https://github.com/AaryanBairagi/social) |
-
-</div>
-
-Designed a directed-edge graph data model in MongoDB for user relationships, enabling O(1) follower lookups and efficient follow-request state management at scale. Built a graph-based recommendation engine using second-degree connection traversal and mutual-connection scoring. Secured all chat data with AES-256-GCM encryption before database persistence — ensuring messages are unreadable even in the event of a direct database breach. Improved backend throughput by layering Redis-compatible caching and route-level rate limiting to prevent abuse during traffic spikes.
+| **Stack** | Next.js, MongoDB, TypeScript, WebSockets, Redis, JWT, Cloudinary, Tailwind CSS |
+| **Data model** | Directed-edge graph in MongoDB for O(1) follower lookups and efficient follow-request state |
+| **Recommendations** | Second-degree traversal with mutual-connection scoring and an explanation for every suggestion |
+| **Security** | Chat encrypted with AES-256-GCM before it reaches the database, so messages stay unreadable even if the database is breached |
+| **Real time** | WebSocket messaging, likes, comments and notifications without polling |
+| **Performance** | Redis-compatible caching and route-level rate limiting to absorb traffic spikes |
 
 </details>
-
----
 
 <details>
-<summary><b>Cerebrum — Decentralized Exam Integrity Platform</b></summary>
-
+<summary><b>CloudTwin:</b> monitor, predict, decide, act, confirm</summary>
 <br/>
 
-A decentralized exam integrity platform using blockchain technology and cryptographic security to prevent paper leaks and tampering at the infrastructure level. Built in direct response to institutional failures like the NEET paper leak — where centralized systems created single points of compromise.
-
-<div align="center">
-
-| Attribute | Details |
+| Aspect | Detail |
 |:---|:---|
-| **Stack** | Solidity · RSA Signature · AES-256 · Blockchain · Node.js · TypeScript |
-| **Architecture** | Decentralized tamper-detection via smart contracts |
-| **Security** | RSA + AES-256 encryption · Solidity smart contracts · blockchain audit trail |
-| **Impact** | Paper leak prevention at infrastructure level — tamper attribution via chain |
-| **Status** | Currently Building |
-| **Repository** | [github.com/AaryanBairagi/cerebrum](https://github.com/AaryanBairagi) |
-
-</div>
-
-Built so that paper leaks like NEET cannot happen — and if tampering is attempted, the blockchain identifies exactly where and by whom. Implements Solidity smart contracts for tamper detection, RSA signature verification for identity, and AES-256 encryption for content security.
+| **Stack** | Go, Node.js with Express, Next.js, TypeScript, PostgreSQL, Redis, Docker Engine API |
+| **Closed loop** | Goes past monitor-and-alert: it predicts, proposes a fix, acts and confirms the result |
+| **Health** | A 0 to 100 score that combines CPU and memory into one readable signal |
+| **Alerting** | A rules engine on sustained thresholds raises alerts before users notice |
+| **Remediation** | A decision engine proposes restarts; the agent runs them only after human approval |
+| **Planning** | A what-if simulator projects metrics at higher load from historical trends |
+| **Architecture** | Agent-pull pattern, so the backend never needs network access to the host, with per-user workspace isolation |
 
 </details>
 
----
+<details>
+<summary><b>D-SHIELD:</b> edge ingestion, risk propagation and tracking</summary>
+<br/>
+
+| Aspect | Detail |
+|:---|:---|
+| **Stack** | Python, Node.js, MQTT (Mosquitto), Raspberry Pi, InfluxDB, Amazon RDS, JavaScript |
+| **Architecture** | Digital twin with a hybrid edge-to-cloud pipeline; ML inference and physics-based crowd analysis in one backend |
+| **Ingestion** | Low-latency MQTT publisher-subscriber streaming from sensor hardware to the cloud |
+| **Risk model** | Multi-zone risk propagation over connected components, escalating neighbouring zones automatically |
+| **Tracking** | Velocity-predicted multi-person identity tracking with adaptive distance thresholds and frame-loss tolerance |
+| **Response** | Organisers are alerted and volunteers dispatched, with a human validation step before any escalation |
+| **Storage** | InfluxDB for time-series crowd analytics, Amazon RDS for structured data |
+
+</details>
+
+<details>
+<summary><b>Cerebrum:</b> paper-leak prevention at the infrastructure level</summary>
+<br/>
+
+| Aspect | Detail |
+|:---|:---|
+| **Stack** | Solidity, Node.js, TypeScript, RSA signatures, AES-256 |
+| **Why** | Built in response to leaks like NEET, where a centralised system was a single point of compromise |
+| **Integrity** | Smart contracts detect tampering and keep an audit trail on-chain |
+| **Security** | RSA signatures verify identity; AES-256 protects paper content |
+| **Status** | In development |
+
+</details>
+
+<p align="right"><a href="#readme-top">Back to top</a></p>
 
 ## Experience
 
-**Software Engineering Intern**
-IBN Technologies Limited · Remote, Pune
-*January 2025 – February 2025*
+**Software Engineering Intern**, IBN Technologies Limited<br/>
+<sub>Remote, Pune &nbsp;|&nbsp; Jan 2025 – Feb 2025</sub>
 
-Designed and shipped a multi-stage AI video pipeline (QuickVid AI) transforming JSON prompts into fully rendered videos — handling script generation, scene-wise asset creation, caption generation, and final video composition using Remotion.
+Designed and shipped QuickVid AI, a multi-stage AI video pipeline that turns JSON prompts into fully rendered videos: script generation, scene-wise asset creation, caption generation and final composition with Remotion.
 
-- Integrated 4+ external AI services (AssemblyAI, Google Cloud TTS, HuggingFace) with custom async orchestration and fault-tolerant failure handling to ensure pipeline reliability under partial service failures
-- Built a Stripe subscription and credit billing system with webhook-driven event handling for real-time user access control, automating plan upgrades, downgrades, and credit top-ups
-- Delivered a production-ready AI pipeline capable of handling concurrent video generation requests with graceful degradation on service failures
+- Integrated 4+ external AI services (AssemblyAI, Google Cloud TTS, HuggingFace) with custom async orchestration and fault-tolerant failure handling, so the pipeline kept working through partial service failures
+- Built a Stripe subscription and credit billing system with webhook-driven events for real-time access control, automating plan upgrades, downgrades and credit top-ups
+- Delivered a production-ready pipeline that handles concurrent video generation requests and degrades gracefully when a service fails
 
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Stripe](https://img.shields.io/badge/Stripe-008CDD?style=flat-square&logo=stripe&logoColor=white)
-![Google Cloud](https://img.shields.io/badge/Google%20Cloud-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+`Next.js` `TypeScript` `PostgreSQL` `Remotion` `Stripe` `AssemblyAI` <code>Google&nbsp;Cloud&nbsp;TTS</code> `HuggingFace`
 
----
+## Tech stack
 
-## Academic Performances
+<table>
+<tr>
+<td><b>Languages</b></td>
+<td>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=ts,js,py,java,c&theme=dark">
+  <img alt="TypeScript, JavaScript, Python, Java, C" src="https://skillicons.dev/icons?i=ts,js,py,java,c&theme=light">
+</picture>
+</td>
+</tr>
+<tr>
+<td><b>Frontend</b></td>
+<td>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=nextjs,react,tailwind,html,css&theme=dark">
+  <img alt="Next.js, React, Tailwind CSS, HTML, CSS" src="https://skillicons.dev/icons?i=nextjs,react,tailwind,html,css&theme=light">
+</picture>
+</td>
+</tr>
+<tr>
+<td><b>Backend and data</b></td>
+<td>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=nodejs,express,postgres,mongodb,redis,prisma,mysql&theme=dark">
+  <img alt="Node.js, Express, PostgreSQL, MongoDB, Redis, Prisma, MySQL" src="https://skillicons.dev/icons?i=nodejs,express,postgres,mongodb,redis,prisma,mysql&theme=light">
+</picture>
+</td>
+</tr>
+<tr>
+<td><b>AI/ML and edge</b></td>
+<td>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=tensorflow,sklearn,raspberrypi&theme=dark">
+  <img alt="TensorFlow, scikit-learn, Raspberry Pi" src="https://skillicons.dev/icons?i=tensorflow,sklearn,raspberrypi&theme=light">
+</picture>
+</td>
+</tr>
+<tr>
+<td><b>Cloud and tooling</b></td>
+<td>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=aws,gcp,docker,vercel,githubactions,git,vscode&theme=dark">
+  <img alt="AWS, Google Cloud, Docker, Vercel, GitHub Actions, Git, VS Code" src="https://skillicons.dev/icons?i=aws,gcp,docker,vercel,githubactions,git,vscode&theme=light">
+</picture>
+</td>
+</tr>
+</table>
 
-<div align="center">
+Also: WebSockets, REST APIs, OAuth 2.0, MQTT, InfluxDB, Keras, Pandas, Matplotlib, shadcn/ui.
 
-| Recognition | Details |
-|:---:|:---|
-| BE [SPPU] Performance | B.E. IT with Honours in Data Science · CGPA 8.8/10 |
-| HSC Performance | 86% · Ranked 4th in college for outstanding academic performance |
-| ICSE Performance | 95.6% · Ranked 9th in school for outstanding academic performance |
+## AI and ML
 
-</div>
+| Area | Where I've used it |
+|:---|:---|
+| LLM systems | **llmfuse:** failover, retries, circuit breakers and rate limiting across LLM providers. **QuickVid AI:** script generation inside a multi-stage video pipeline |
+| AI pipelines | **QuickVid AI:** async orchestration across 4+ AI services with fault-tolerant failure handling |
+| Computer vision | **D-SHIELD:** velocity-predicted multi-person tracking with frame-loss tolerance |
+| IoT and edge | **D-SHIELD:** MQTT (Mosquitto) ingestion from Raspberry Pi sensor nodes to the cloud |
+| Data and time series | **D-SHIELD:** InfluxDB crowd analytics. Pandas and Matplotlib for analysis |
+| Deep learning | Neural networks, CNNs and transformer models with TensorFlow, Keras and scikit-learn |
+
+## Education
+
+| Programme | Institution | Years | Result |
+|:---|:---|:---|:---|
+| PGCP-AI | C-DAC ACTS, Pune | 2026–2027 | In progress |
+| B.E. Information Technology, Honours in Data Science | P.E.S. Modern College of Engineering, Pune (SPPU) | 2022–2026 | CGPA 8.8 / 10 |
+| HSC, Science | Asian College of Science, Commerce & Arts, Pune | 2021–2022 | 86%, ranked 4th in college |
+| ICSE | DSK School, Pune | 2019–2020 | 95.6%, ranked 9th in school |
 
 <!-- ---
 
@@ -254,126 +425,72 @@ Designed and shipped a multi-stage AI video pipeline (QuickVid AI) transforming 
 
  </div> -->
 
----
-
-## Coding Profiles
-
-<div align="center">
-
-[![LeetCode](https://img.shields.io/badge/LeetCode-aaryanb4real-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/aaryanb4real/)
-[![GeeksforGeeks](https://img.shields.io/badge/GeeksforGeeks-aaryanbairagi1108-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white)](https://www.geeksforgeeks.org/profile/aaryanbairagi1108)
-[![GitHub](https://img.shields.io/badge/GitHub-AaryanBairagi-171515?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AaryanBairagi)
-
-</div>
-
----
-
-## GitHub Analytics
-
-<!-- <div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=AaryanBairagi&show_icons=true&theme=midnight-purple&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d0d1a&title_color=7c3aed&icon_color=a78bfa&text_color=e2e8f0"/> 
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AaryanBairagi&layout=compact&langs_count=8&theme=midnight-purple&hide_border=true&bg_color=0d0d1a&title_color=7c3aed&text_color=e2e8f0"/>
-
-</div> -->
-
-<div align="center">
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=AaryanBairagi&theme=midnight-purple&hide_border=true&background=0d0d1a&stroke=7c3aed&ring=6d28d9&fire=a78bfa&currStreakLabel=7c3aed&sideLabels=e2e8f0&currStreakNum=e2e8f0&sideNums=e2e8f0&dates=94a3b8"/>
-
-</div>
-
----
-
-
-## Core Competencies
-
-<div align="center">
-
-| Area | Focus |
-|---|---|
-| Backend | APIs, auth, databases, scaling |
-| Frontend | Next.js, React, responsive UI |
-| AI/ML | pipelines, integration, deployment |
-| Systems | event-driven architecture, reliability |
-| Security | encryption, access control, tamper detection |
-
-</div>
----
-
-## Contribution Activity
-
-<div align="center">
-
-[![Aaryan's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=AaryanBairagi&bg_color=0d0d1a&color=a78bfa&line=7c3aed&point=6d28d9&area=true&hide_border=true&area_color=4c1d95)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
-</div>
-
----
-
-## Contribution Snake
+## GitHub activity
 
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AaryanBairagi/AaryanBairagi/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AaryanBairagi/AaryanBairagi/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/AaryanBairagi/AaryanBairagi/output/github-contribution-grid-snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=AaryanBairagi&hide_border=true&background=0d0d1a&stroke=7c3aed&ring=6d28d9&fire=a78bfa&currStreakLabel=a78bfa&sideLabels=e2e8f0&currStreakNum=e2e8f0&sideNums=e2e8f0&dates=94a3b8">
+  <img alt="GitHub contribution streak for AaryanBairagi" src="https://github-readme-streak-stats.herokuapp.com/?user=AaryanBairagi&hide_border=true&background=f6f8fa&stroke=c4b5fd&ring=7c3aed&fire=7c3aed&currStreakLabel=6d28d9&sideLabels=1f2328&currStreakNum=1f2328&sideNums=1f2328&dates=59636e">
 </picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=AaryanBairagi&bg_color=0d0d1a&color=a78bfa&line=7c3aed&point=c4b5fd&area=true&hide_border=true&area_color=4c1d95">
+  <img alt="Contribution activity graph for AaryanBairagi" width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=AaryanBairagi&bg_color=f6f8fa&color=4c1d95&line=7c3aed&point=6d28d9&area=true&hide_border=true&area_color=c4b5fd">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AaryanBairagi/AaryanBairagi/output/github-contribution-grid-snake-dark.svg">
+  <img alt="Contribution grid with a snake eating the commits" src="https://raw.githubusercontent.com/AaryanBairagi/AaryanBairagi/output/github-contribution-grid-snake.svg">
+</picture>
+
+![Profile views](https://komarev.com/ghpvc/?username=AaryanBairagi&color=7c3aed&style=flat-square&label=Profile+views)
+![Followers](https://img.shields.io/github/followers/AaryanBairagi?style=flat-square&color=6d28d9&label=Followers)
+![Stars](https://img.shields.io/github/stars/AaryanBairagi?style=flat-square&color=4c1d95&label=Stars)
 
 </div>
 
----
-
-## Current Focus
+## Current focus
 
 ```yaml
 current_focus:
-  learning:
-    - AWS Solutions Architect Associate (SAA-C03)
-    - DeepLearning.AI Deep Learning Specialization
-    - Advanced System Design and Distributed Systems
-    - Blockchain development with Solidity
+  studying:
+    - PGCP-AI at C-DAC ACTS, Pune (Aug 2026 – Feb 2027)
 
   building:
-    - Cerebrum: Decentralized Exam Integrity Platform
-    - DSHIELD: Research paper and system refinement
-    - Backend infrastructure for production-scale systems
+    - llmfuse v2, with an async client and routing to idle providers
+    - semcache, a semantic cache for LLM calls that plugs into llmfuse
+    - Cerebrum, a decentralized exam integrity platform
 
-  exploring:
-    - Zero-knowledge proofs for exam security
-    - Real-time ML inference optimization on edge hardware
-    - LLM integration patterns for production applications
-    - CI/CD pipelines with GitHub Actions
+  learning:
+    - LLM and GenAI engineering (RAG, agents, fine-tuning)
+    - Advanced system design and distributed systems
+    - AWS Solutions Architect Associate (SAA-C03)
+
+  writing:
+    - D-SHIELD research paper
 
   open_to:
-    - Backend Engineering roles
-    - Full-Stack Engineering roles
-    - ML / AI Engineering roles
-    - SWE Internships and Full-Time positions
+    - Backend, Full-Stack and ML / AI Engineering roles
+    - SWE internships and full-time positions
     - Research collaborations in AI / IoT / Security
 ```
-
----
 
 ## Connect
 
 <div align="center">
 
-[![Gmail](https://img.shields.io/badge/Gmail-aaryanbairagi1108@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aaryanbairagi1108@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Aaryan%20Bairagi-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aaryan-bairagi-183249249/)
-[![GitHub](https://img.shields.io/badge/GitHub-AaryanBairagi-171515?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AaryanBairagi)
-[![Twitter](https://img.shields.io/badge/Twitter-@aaryanb4real-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/aaryanb4real)
-[![Instagram](https://img.shields.io/badge/Instagram-@aaryanb4real-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/aaryanb4real/)
+<a href="mailto:aaryanbairagi1108@gmail.com"><img src="assets/buttons/email.svg" height="44" alt="Email"></a>&nbsp;
+<a href="https://www.linkedin.com/in/aaryan-bairagi-183249249/"><img src="assets/buttons/linkedin.svg" height="44" alt="LinkedIn"></a>&nbsp;
+<a href="https://x.com/aaryanb4real"><img src="assets/buttons/x.svg" height="44" alt="X (Twitter)"></a>&nbsp;
+<a href="https://aaryanbairagi.in"><img src="assets/buttons/portfolio.svg" height="44" alt="Portfolio"></a>
 
-</div>
+I also post solutions on [LeetCode](https://leetcode.com/u/aaryanb4real/) and [GeeksforGeeks](https://www.geeksforgeeks.org/profile/aaryanbairagi1108), notebooks on [Kaggle](https://www.kaggle.com/aaryanbairagi), and everything else on [Instagram](https://www.instagram.com/aaryanb4real/).
 
----
-
-<div align="center">
+<br/>
 
 *"The best systems are not the ones that never fail — they are the ones that fail gracefully and recover automatically."*
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=120&section=footer&animation=fadeIn" width="100%"/>
+<a href="#readme-top">Back to top</a>
 
-</div> 
+</div>

@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480" role="img" aria-labelledby="title desc">
+  <title id="title">llmfuse: production-grade reliability for LLM calls</title>
+  <desc id="desc">Animated diagram of one request while Groq is down. The request goes from your app through llmfuse to Groq, which answers HTTP 503. llmfuse retries with backoff, records one failure on Groq's circuit breaker, then fails over to Gemini, which answers 200 OK, and the response returns to the app.</desc>
+  <style>
+    .pkg { font: 700 64px 'JetBrains Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; fill: #f5f3ff; }
+    .tag { font: italic 400 23px Georgia, 'Times New Roman', serif; fill: #c4b5fd; }
+    .body { font: 400 16.5px 'Helvetica Neue', 'Segoe UI', Inter, Roboto, Arial, sans-serif; fill: #a5a1c2; }
+    .cmd { font: 500 20px 'JetBrains Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; fill: #f5f3ff; }
+    .prompt { fill: #a78bfa; }
+    .fact { font: 400 14.5px 'Helvetica Neue', 'Segoe UI', Inter, Roboto, Arial, sans-serif; fill: #8f8aad; }
+    .h { font: 500 15px 'Helvetica Neue', 'Segoe UI', Inter, Roboto, Arial, sans-serif; fill: #e4e0f5; }
+    .note { font: 400 12.5px 'Helvetica Neue', 'Segoe UI', Inter, Roboto, Arial, sans-serif; fill: #8f8aad; }
+    .label { font: 500 15px 'Helvetica Neue', 'Segoe UI', Inter, Roboto, Arial, sans-serif; fill: #e4e0f5; }
+    .mono { font: 500 15px 'JetBrains Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; fill: #f5f3ff; }
+    .rank { font: 400 12px 'Helvetica Neue', 'Segoe UI', Inter, Roboto, Arial, sans-serif; fill: #6f6a8c; }
+    .say { font: 500 12.5px 'Helvetica Neue', 'Segoe UI', Inter, Roboto, Arial, sans-serif; opacity: 0; }
+    .bad { fill: #f87171; }
+    .good { fill: #4ade80; }
+    .wire { stroke: rgba(255,255,255,.16); stroke-width: 1.5; fill: none; }
+    .box { fill: #0b0916; stroke: rgba(255,255,255,.16); stroke-width: 1.4; }
+    .fuse { stroke: #a78bfa; }
+    .dot { fill: rgba(255,255,255,.22); }
+    .idle { opacity: .6; }
+
+    .pk { fill: #c4b5fd; animation: pk 10s linear infinite; }
+    .groq { animation: groq 10s linear infinite; }
+    .gem { animation: gem 10s linear infinite; }
+    .app { animation: app 10s linear infinite; }
+    .strike { animation: strike 10s linear infinite; }
+    .s1 { animation: s1 10s linear infinite; }
+    .s2 { animation: s2 10s linear infinite; }
+    .ok { animation: ok 10s linear infinite; }
+    .done { animation: done 10s linear infinite; }
+
+    @keyframes pk {
+      0% { transform: translate(680px, 233px); opacity: 0; fill: #c4b5fd; }
+      2% { transform: translate(680px, 233px); opacity: 1; }
+      9% { transform: translate(832px, 233px); }
+      12% { transform: translate(944px, 233px); }
+      15% { transform: translate(944px, 145px); }
+      18% { transform: translate(1063px, 145px); }
+      44% { transform: translate(1063px, 145px); }
+      47% { transform: translate(944px, 145px); }
+      50% { transform: translate(944px, 233px); }
+      54% { transform: translate(1063px, 233px); fill: #c4b5fd; }
+      56% { transform: translate(1063px, 233px); fill: #4ade80; }
+      60% { transform: translate(944px, 233px); }
+      64% { transform: translate(832px, 233px); }
+      70% { transform: translate(680px, 233px); opacity: 1; fill: #4ade80; }
+      71% { transform: translate(680px, 233px); opacity: 0; }
+      100% { transform: translate(680px, 233px); opacity: 0; fill: #4ade80; }
+    }
+    /* three attempts, each wait longer than the last: backoff */
+    @keyframes groq {
+      0%, 18% { stroke: rgba(255,255,255,.16); fill: #0b0916; }
+      19% { stroke: #f87171; fill: #2a0d12; }
+      22%, 26% { stroke: rgba(248,113,113,.45); fill: #12080d; }
+      27% { stroke: #f87171; fill: #2a0d12; }
+      30%, 38% { stroke: rgba(248,113,113,.45); fill: #12080d; }
+      39% { stroke: #f87171; fill: #2a0d12; }
+      42%, 90% { stroke: rgba(248,113,113,.55); fill: #12080d; }
+      96%, 100% { stroke: rgba(255,255,255,.16); fill: #0b0916; }
+    }
+    @keyframes gem {
+      0%, 53% { stroke: rgba(255,255,255,.16); fill: #0b0916; }
+      55%, 90% { stroke: #4ade80; fill: #0a1f14; }
+      96%, 100% { stroke: rgba(255,255,255,.16); fill: #0b0916; }
+    }
+    @keyframes app {
+      0%, 69% { stroke: rgba(255,255,255,.16); }
+      71%, 90% { stroke: #4ade80; }
+      96%, 100% { stroke: rgba(255,255,255,.16); }
+    }
+    @keyframes strike {
+      0%, 43.5% { fill: rgba(255,255,255,.22); }
+      44.5%, 90% { fill: #f87171; }
+      96%, 100% { fill: rgba(255,255,255,.22); }
+    }
+    @keyframes s1 { 0%, 18% { opacity: 0; } 19.5%, 43% { opacity: 1; } 44%, 100% { opacity: 0; } }
+    @keyframes s2 { 0%, 43.5% { opacity: 0; } 44.5%, 90% { opacity: 1; } 95%, 100% { opacity: 0; } }
+    @keyframes ok { 0%, 54.5% { opacity: 0; } 56%, 90% { opacity: 1; } 95%, 100% { opacity: 0; } }
+    @keyframes done { 0%, 70% { opacity: 0; } 72%, 90% { opacity: 1; } 95%, 100% { opacity: 0; } }
+
+    /* Reduced motion: hold the end state instead of animating */
+    @media (prefers-reduced-motion: reduce) {
+      .pk, .groq, .gem, .app, .strike, .s1, .s2, .ok, .done { animation: none; }
+      .pk, .s1 { opacity: 0; }
+      .s2, .ok, .done { opacity: 1; }
+      .groq { stroke: rgba(248,113,113,.55); }
+      .gem, .app { stroke: #4ade80; }
+      .strike { fill: #f87171; }
+    }
+  </style>
+  <defs>
+    <clipPath id="frame"><rect width="1200" height="480" rx="20"/></clipPath>
+    <filter id="nebula" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="70"/></filter>
+    <filter id="glow" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="480" fill="#000"/>
+    <circle cx="1120" cy="-20" r="220" fill="#6d28d9" opacity=".22" filter="url(#nebula)"/>
+    <circle cx="60" cy="520" r="200" fill="#2563eb" opacity=".10" filter="url(#nebula)"/>
+    <g>
+    <circle cx="542.9" cy="268.7" r="1.4" fill="#fff" opacity="0.23"/>
+    <circle cx="609.4" cy="281.9" r="0.6" fill="#fff" opacity="0.34"/>
+    <circle cx="570.9" cy="294.7" r="0.6" fill="#fff" opacity="0.11"/>
+    <circle cx="364.1" cy="43.5" r="1.4" fill="#fff" opacity="0.36"/>
+    <circle cx="761.3" cy="285.8" r="0.8" fill="#fff" opacity="0.39"/>
+    <circle cx="784.7" cy="295.5" r="0.6" fill="#fff" opacity="0.28"/>
+    <circle cx="998.0" cy="30.3" r="0.5" fill="#fff" opacity="0.14"/>
+    <circle cx="290.3" cy="14.4" r="0.8" fill="#fff" opacity="0.18"/>
+    <circle cx="709.2" cy="93.8" r="0.6" fill="#fff" opacity="0.28"/>
+    <circle cx="599.7" cy="318.0" r="0.8" fill="#fff" opacity="0.29"/>
+    <circle cx="488.1" cy="264.6" r="1.4" fill="#fff" opacity="0.11"/>
+    <circle cx="304.8" cy="363.8" r="0.9" fill="#fff" opacity="0.17"/>
+    <circle cx="84.3" cy="367.8" r="0.8" fill="#fff" opacity="0.11"/>
+    <circle cx="349.1" cy="32.1" r="0.5" fill="#fff" opacity="0.35"/>
+    <circle cx="0.7" cy="100.7" r="0.5" fill="#fff" opacity="0.23"/>
+    <circle cx="1176.4" cy="190.8" r="0.5" fill="#fff" opacity="0.26"/>
+    <circle cx="238.2" cy="324.0" r="0.7" fill="#fff" opacity="0.11"/>
+    <circle cx="399.1" cy="462.8" r="1.4" fill="#fff" opacity="0.38"/>
+    <circle cx="161.5" cy="339.4" r="0.5" fill="#fff" opacity="0.10"/>
+    <circle cx="956.4" cy="85.3" r="0.9" fill="#fff" opacity="0.14"/>
+    <circle cx="610.6" cy="472.9" r="1.4" fill="#fff" opacity="0.12"/>
+    <circle cx="772.5" cy="55.9" r="0.8" fill="#fff" opacity="0.40"/>
+    <circle cx="0.6" cy="414.9" r="1.4" fill="#fff" opacity="0.27"/>
+    <circle cx="1197.5" cy="9.4" r="0.6" fill="#fff" opacity="0.21"/>
+    <circle cx="1025.3" cy="308.1" r="0.5" fill="#fff" opacity="0.09"/>
+    <circle cx="175.6" cy="211.9" r="0.5" fill="#fff" opacity="0.33"/>
+    <circle cx="394.7" cy="142.2" r="0.5" fill="#fff" opacity="0.10"/>
+    <circle cx="250.5" cy="305.6" r="0.5" fill="#fff" opacity="0.27"/>
+    <circle cx="446.0" cy="217.5" r="0.9" fill="#fff" opacity="0.23"/>
+    <circle cx="689.5" cy="415.9" r="0.6" fill="#fff" opacity="0.28"/>
+    <circle cx="373.0" cy="109.6" r="0.9" fill="#fff" opacity="0.16"/>
+    <circle cx="227.8" cy="354.9" r="0.9" fill="#fff" opacity="0.14"/>
+    <circle cx="1140.2" cy="423.5" r="0.9" fill="#fff" opacity="0.11"/>
+    <circle cx="56.9" cy="52.3" r="0.9" fill="#fff" opacity="0.39"/>
+    <circle cx="286.1" cy="338.2" r="0.7" fill="#fff" opacity="0.21"/>
+    <circle cx="1085.8" cy="235.7" r="0.9" fill="#fff" opacity="0.14"/>
+    <circle cx="864.4" cy="33.0" r="0.6" fill="#fff" opacity="0.23"/>
+    <circle cx="784.2" cy="295.6" r="0.5" fill="#fff" opacity="0.17"/>
+    <circle cx="1100.8" cy="97.9" r="0.5" fill="#fff" opacity="0.10"/>
+    <circle cx="493.7" cy="119.6" r="0.5" fill="#fff" opacity="0.14"/>
+    <circle cx="442.5" cy="274.6" r="0.6" fill="#fff" opacity="0.11"/>
+    <circle cx="166.1" cy="216.2" r="0.7" fill="#fff" opacity="0.29"/>
+    <circle cx="829.5" cy="280.5" r="0.6" fill="#fff" opacity="0.27"/>
+    <circle cx="1108.3" cy="227.9" r="0.7" fill="#fff" opacity="0.30"/>
+    <circle cx="1155.3" cy="10.2" r="1.1" fill="#fff" opacity="0.10"/>
+    </g>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="479" rx="19.5" fill="none" stroke="#a78bfa" stroke-opacity=".22"/>
+
+  <text class="pkg" x="56" y="118">llmfuse</text>
+  <text class="tag" x="56" y="160">Production-grade reliability for LLM calls.</text>
+  <text class="body" x="56" y="206">One client in front of many LLM providers. When one is</text>
+  <text class="body" x="56" y="232">slow, rate-limited or down, llmfuse retries it sensibly</text>
+  <text class="body" x="56" y="258">and answers from the next provider instead.</text>
+  <rect x="56" y="288" width="440" height="58" rx="12" fill="#07050f" stroke="#a78bfa" stroke-opacity=".4"/>
+  <text class="cmd" x="80" y="324"><tspan class="prompt">$</tspan> pip install llmfuse</text>
+  <text class="fact" x="56" y="394">Zero runtime dependencies. Fully typed. Python 3.10+. MIT licensed.</text>
+  <text class="fact" x="56" y="420">Verified live against Groq, Gemini, OpenAI and Anthropic.</text>
+
+  <rect x="600" y="36" width="564" height="408" rx="16" fill="#fff" fill-opacity=".025" stroke="#fff" stroke-opacity=".07"/>
+  <text class="h" x="628" y="74">One request while Groq is down</text>
+  <text class="note" x="990" y="108">In priority order</text>
+  <path class="wire" d="M732 233H772M892 233H944M944 145V321M944 145H990M944 233H990M944 321H990"/>
+
+  <circle class="pk" r="6" filter="url(#glow)"/>
+
+  <rect class="box app" x="628" y="210" width="104" height="46" rx="10"/>
+  <text class="label" x="680" y="238" text-anchor="middle">your app</text>
+  <rect class="box fuse" x="772" y="210" width="120" height="46" rx="10"/>
+  <text class="mono" x="832" y="238" text-anchor="middle">llmfuse</text>
+
+  <rect class="box groq" x="990" y="122" width="146" height="46" rx="10"/>
+  <text class="label" x="1006" y="150">groq</text>
+  <circle class="dot strike" cx="1086" cy="145" r="2.6"/>
+  <circle class="dot" cx="1095" cy="145" r="2.6"/>
+  <circle class="dot" cx="1104" cy="145" r="2.6"/>
+  <circle class="dot" cx="1113" cy="145" r="2.6"/>
+  <circle class="dot" cx="1122" cy="145" r="2.6"/>
+  <text class="rank" x="1148" y="150">1</text>
+
+  <rect class="box gem" x="990" y="210" width="146" height="46" rx="10"/>
+  <text class="label" x="1006" y="238">gemini</text>
+  <text class="rank" x="1148" y="238">2</text>
+
+  <g class="idle">
+    <rect class="box" x="990" y="298" width="146" height="46" rx="10"/>
+    <text class="label" x="1006" y="326">anthropic</text>
+  </g>
+  <text class="rank" x="1148" y="326">3</text>
+
+  <text class="say bad s1" x="1063" y="193" text-anchor="middle">503, retrying with backoff</text>
+  <text class="say bad s2" x="1063" y="193" text-anchor="middle">retries exhausted, breaker 1/5</text>
+  <text class="say good ok" x="1063" y="281" text-anchor="middle">200 OK</text>
+  <text class="say good done" x="680" y="284" text-anchor="middle">answered by gemini</text>
+
+  <text class="note" x="628" y="414">Each provider gets its own retries, circuit breaker and rate limit.</text>
+</svg>
