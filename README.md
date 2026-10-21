@@ -315,57 +315,27 @@ Designed and shipped QuickVid AI, a multi-stage AI video pipeline that turns JSO
 
 `Next.js` `TypeScript` `PostgreSQL` `Remotion` `Stripe` `AssemblyAI` <code>Google&nbsp;Cloud&nbsp;TTS</code> `HuggingFace`
 
-## Tech stack
+## Tech Stack
 
-<table>
-<tr>
-<td><b>Languages</b></td>
-<td>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=ts,js,py,java,c&theme=dark">
-  <img alt="TypeScript, JavaScript, Python, Java, C" src="https://skillicons.dev/icons?i=ts,js,py,java,c&theme=light">
-</picture>
-</td>
-</tr>
-<tr>
-<td><b>Frontend</b></td>
-<td>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=nextjs,react,tailwind,html,css&theme=dark">
-  <img alt="Next.js, React, Tailwind CSS, HTML, CSS" src="https://skillicons.dev/icons?i=nextjs,react,tailwind,html,css&theme=light">
-</picture>
-</td>
-</tr>
-<tr>
-<td><b>Backend and data</b></td>
-<td>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=nodejs,express,postgres,mongodb,redis,prisma,mysql&theme=dark">
-  <img alt="Node.js, Express, PostgreSQL, MongoDB, Redis, Prisma, MySQL" src="https://skillicons.dev/icons?i=nodejs,express,postgres,mongodb,redis,prisma,mysql&theme=light">
-</picture>
-</td>
-</tr>
-<tr>
-<td><b>AI/ML and edge</b></td>
-<td>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=tensorflow,sklearn,raspberrypi&theme=dark">
-  <img alt="TensorFlow, scikit-learn, Raspberry Pi" src="https://skillicons.dev/icons?i=tensorflow,sklearn,raspberrypi&theme=light">
-</picture>
-</td>
-</tr>
-<tr>
-<td><b>Cloud and tooling</b></td>
-<td>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=aws,gcp,docker,vercel,githubactions,git,vscode&theme=dark">
-  <img alt="AWS, Google Cloud, Docker, Vercel, GitHub Actions, Git, VS Code" src="https://skillicons.dev/icons?i=aws,gcp,docker,vercel,githubactions,git,vscode&theme=light">
-</picture>
-</td>
-</tr>
-</table>
+<div align="center">
 
-Also: WebSockets, REST APIs, OAuth 2.0, MQTT, InfluxDB, Keras, Pandas, Matplotlib, shadcn/ui.
+**Languages**
+
+[![My Skills](https://skillicons.dev/icons?i=ts,js,python,java,c&theme=dark)](https://skillicons.dev)
+
+**Frontend**
+
+[![My Skills](https://skillicons.dev/icons?i=nextjs,react,tailwind,html,css&theme=dark)](https://skillicons.dev)
+
+**Backend & Databases**
+
+[![My Skills](https://skillicons.dev/icons?i=nodejs,express,postgresql,mongodb,redis,prisma,mysql&theme=dark)](https://skillicons.dev)
+
+**Cloud, DevOps & Tooling**
+
+[![My Skills](https://skillicons.dev/icons?i=aws,gcp,docker,vercel,git,github,vscode&theme=dark)](https://skillicons.dev)
+
+</div>
 
 ## AI and ML
 
@@ -436,10 +406,10 @@ Also: WebSockets, REST APIs, OAuth 2.0, MQTT, InfluxDB, Keras, Pandas, Matplotli
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=AaryanBairagi&bg_color=0d0d1a&color=a78bfa&line=7c3aed&point=c4b5fd&area=true&hide_border=true&area_color=4c1d95">
-  <img alt="Contribution activity graph for AaryanBairagi" width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=AaryanBairagi&bg_color=f6f8fa&color=4c1d95&line=7c3aed&point=6d28d9&area=true&hide_border=true&area_color=c4b5fd">
+  <!-- <img alt="Contribution activity graph for AaryanBairagi" width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=AaryanBairagi&bg_color=f6f8fa&color=4c1d95&line=7c3aed&point=6d28d9&area=true&hide_border=true&area_color=c4b5fd"> -->
 </picture>
 
-<picture>
+<picture> 
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AaryanBairagi/AaryanBairagi/output/github-contribution-grid-snake-dark.svg">
   <img alt="Contribution grid with a snake eating the commits" src="https://raw.githubusercontent.com/AaryanBairagi/AaryanBairagi/output/github-contribution-grid-snake.svg">
 </picture>
@@ -465,10 +435,6 @@ current_focus:
   learning:
     - LLM and GenAI engineering (RAG, agents, fine-tuning)
     - Advanced system design and distributed systems
-    - AWS Solutions Architect Associate (SAA-C03)
-
-  writing:
-    - D-SHIELD research paper
 
   open_to:
     - Backend, Full-Stack and ML / AI Engineering roles
