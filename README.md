@@ -23,7 +23,7 @@
 
 ## About
 
-I build systems: full-stack applications, backend infrastructure and ML-integrated products that work in production, not just on localhost. Taking an idea from scratch to something people can actually use is what drives most of what I do.
+Hello, this is Aaryan Bairagi. I have designed and shipped end-to-end software: event-driven backends, secure APIs, real-time web applications. I care most about the engineering that decides whether a product holds up with real users: fault tolerance, data integrity, security and performance under load. Taking an idea from scratch to something people can actually use, is something that has driven most of what I have done.
 
 Most of my work sits where at least two of these meet:
 
