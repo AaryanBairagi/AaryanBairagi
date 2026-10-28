@@ -27,7 +27,7 @@ Hello, this is Aaryan Bairagi. I have designed and shipped end-to-end software: 
 
 Most of my work sits where at least two of these meet:
 
-- **Backend and full-stack:** Node.js, Next.js, TypeScript, PostgreSQL, MongoDB, Redis, WebSockets
+- **Backend and Full-stack:** Node.js, Next.js, TypeScript, PostgreSQL, MongoDB, Redis, WebSockets
 - **Applied AI/ML:** LLM integration, async AI pipelines, TensorFlow, Keras, computer vision
 - **IoT and edge:** MQTT, Raspberry Pi, real-time ingestion, time-series analytics
 
